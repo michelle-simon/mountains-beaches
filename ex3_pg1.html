@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS - Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <title>Ex3 Bootstrap - Mountains</title>
+
+</head>
+
+<body>
+
+    <!-- Navigation Container -->
+    <div class="container-fluid pt-3">
+        <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_social&stacked=h -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">MOUNTAINS!</a>
+
+            <!-- Toggler/Collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Bar -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav">
+
+                    <!-- Listed Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Theme 1: Geology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Theme 2: Sigthseeing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Theme 3: Dangers</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Theme 4: Activities </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="#">Theme 4.1: Rock Climbing</a> </li>
+                            <li> <a class="dropdown-item" href="#">Theme 4.2: Mountain Climbing</a> </li>
+                            <li> <a class="dropdown-item" href="#">Theme 4.3: Hiking</a> </li>
+                            <li> <a class="dropdown-item" href="#">Theme 4.4: Skiing</a> </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Carousel & Columns & Sidebar Container -->
+    <div class="container-fluid">
+
+        <!-- Carousel Row -->
+        <div class="row pt-3">
+            <div class="col-sm-12">
+                <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+                    </ul>
+
+                    <!-- Images -->
+                    <div class="carousel-inner">
+
+                        <!-- Image 1 -->
+                        <div class="carousel-item active">
+                            <img src="https://i.imgur.com/9XtKtrc.png" alt="Zillertal Alps" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Zillertal Alps, 2017 Italy</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 2 -->
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/9JUmU8y.png" alt="Bettmerhorn Mountains" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Bettmerhorn Mountains, 2016 Switzerland</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 3 -->
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/5iTYZzt.jpeg" alt="Yosemite Tunnel" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Yosemite Tunnel, 2016 California</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 4 -->
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/1bsx3pT.png" alt="Ciucaș Peak" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Ciucaș Peak, 2016 Romania</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 5 -->
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/XqhssgM.jpeg" alt="Monte Altissimo di Nago" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Monte Altissimo di Nago, 2017 Italy</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                        <!-- Image 6 -->
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/kUFTrM1.png" alt="Whistler Mountain" width="1950" height="1050">
+                            <div class="carousel-caption">
+                                <h3>Whistler Mounatain, 2017 Canada</h3>
+                                <p>Free to use under the Unsplash License</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left & Right Controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Columns & Sidebar Row -->
+        <div class="row pt-4">
+
+            <!-- Columns -->
+            <div class="col-md-8 col-lg-9 col-xl-10">
+                <div class="row">
+
+                    <!-- Column 1 -->
+                    <div class="col-lg-6">
+
+                        <!-- Column 1 Text -->
+                        <h3>What Are Mountains?</h3>
+                        <p align="justify">A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges. (<a href="https://en.wikipedia.org/wiki/Mountain#">Wikipedia</a>, 2024)</p>
+
+                        <!-- Column 1 Navigation -->
+                        <div>
+
+                            <!-- Column 1 Navigation: List -->
+                            <!-- https://www.w3schools.com/bootstrap4/bootstrap_navs.asp -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item"> 
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#1a">Volcanoes</a> 
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" data-bs-toggle="tab" href="#2a">Examples</a>
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" data-bs-toggle="tab" href="#3a">Fold Mnt</a>
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" data-bs-toggle="tab" href="#4a">Block Mnt</a>
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" data-bs-toggle="tab" href="#5a">Erosion</a> 
+                                </li>
+                            </ul>
+
+                            <!-- Column 1 Navigation: Tabs -->
+                            <div class="tab-content">
+
+                                <!-- Column 1 Navigation: Tab 1 Text -->
+                                <div class="tab-pane container active pt-3" id="1a">
+                                    <p align="justify">Volcanoes are formed when a plate is pushed below another plate, or at a mid-ocean ridge or hotspot. At a depth of around 100 km, melting occurs in rock above the slab, & forms magma that reaches the surface. When the magma reaches the surface, it often builds a volcanic mountain, such as a shield volcano or a stratovolcano. The magma does not have to reach the surface in order to create a mountain: magma that solidifies below ground can still form dome mountains. (<a href="https://en.wikipedia.org/wiki/Mountain#Volcanoes">Wikipedia</a>, 2024)
+                                    </p>
+                                </div>
+
+                                <!-- Column 1 Navigation: Tab 2 Table -->
+                                <div class="tab-pane container fade" id="2a">
+                                    <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_table_contextual&stacked=h -->
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Untited States Volcano</th>
+                                                <th>Type</th>
+                                                <th>Last Eruption</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Mount Hood, OR</td>
+                                                <td>Stratovolcano</td>
+                                                <td>Sept 21, 1865</td>
+                                            </tr>
+                                            <tr class="table-primary">
+                                                <td>Black Peak, AK</td>
+                                                <td>Stratovolcano</td>
+                                                <td>4,000 years ago</td>
+                                            </tr>
+                                            <tr class="table-success">
+                                                <td>Mauna Loa, HI</td>
+                                                <td>Basaltic Shield</td>
+                                                <td>Nov 27, 2022</td>
+                                            </tr>
+                                            <tr class="table-danger">
+                                                <td>Mount St. Helens, WA</td>
+                                                <td>Stratovolcano</td>
+                                                <td>May 18, 1980</td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td>Yellowstone Caldera, WY</td>
+                                                <td>Supervolcano</td>
+                                                <td>640,000 years ago</td>
+                                            </tr>
+                                            <tr class="table-warning">
+                                                <td>Kīlauea, HI</td>
+                                                <td>Active Shield</td>
+                                                <td>May 3, 2018</td>
+                                            </tr>
+                                            <tr class="table-active">
+                                                <td>Rutan Hill, NJ</td>
+                                                <td>Extinct</td>
+                                                <td>Unknown</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Column 1 Navigation: Tab 3 Text -->
+                                <div class="tab-pane container fade pt-3" id="3a">
+                                    <p align="justify">Fold mountains occur when 2 plates collide: shortening occurs along thrust faults & the crust is overthickened. Since the less dense continental crust "floats" on the denser mantle rocks beneath, the weight of any crustal material forced upward to form mountains must be balanced by the buoyancy force of a greater volume forced downward into the mantle. Thus the continental crust is normally much thicker under mountains, compared to lower lying areas. (<a href="https://en.wikipedia.org/wiki/Mountain#Fold_mountains">Wikipedia</a>, 2024)</p>
+                                </div>
+
+                                <!-- Column 1 Navigation: Tab 4 Text -->
+                                <div class="tab-pane container fade pt-3" id="4a">
+                                    <p align="justify">Block mountains are caused by faults in the crust: a plane where rocks have moved past each other. When rocks on 1 side of a fault rise relative to the other, it can form a mountain. The uplifted blocks are block mountains or horsts. The intervening dropped blocks are termed graben: these can be small or form extensive rift valley systems. These areas often occur when the regional stress is extensional and the crust is thinned. (<a href="https://en.wikipedia.org/wiki/Mountain#Block_mountains">Wikipedia</a>, 2024)</p>
+                                </div>
+
+                                <!-- Column 1 Navigation: Tab 5 Text -->
+                                <div class="tab-pane container fade pt-3" id="5a">
+                                    <p align="justify">During and following uplift, mountains are subjected to the agents of erosion (water, wind, ice, & gravity) which gradually wear the uplifted area down. Erosion causes the surface of mountains to be younger than the rocks that form the mountains themselves. Glacial processes produce characteristic landforms, such as pyramidal peaks, knife-edge arêtes, and bowl-shaped cirques with lakes. Plateau mountains are formed from the erosion of an uplifted plateau. (<a href="https://en.wikipedia.org/wiki/Mountain#Erosion">Wikipedia</a>, 2024)
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-6">
+                        <!-- Column 2 Text -->
+                        <h3>How Are Mountains Formed & Used?</h3>
+                        <p align="justify">Mountains are formed through tectonic forces, erosion, or volcanism, which act on time scales of up to tens of millions of years. Once mountain building ceases, mountains are slowly leveled through the action of weathering, through slumping and other forms of mass wasting, as well as through erosion by rivers and glaciers.</p>
+                        <p align="justify">High elevations on mountains produce colder climates than at sea level at similar latitude. These colder climates strongly affect the ecosystems of mountains: different elevations have different plants and animals. Because of the less hospitable terrain and climate, mountains tend to be used less for agriculture and more for resource extraction, such as mining and logging, along with recreation, such as mountain climbing and skiing.</p>
+                        <p align="justify">The highest mountain on Earth is Mount Everest in the Himalayas of Asia, whose summit is 8,850 m (29,035 ft) above mean sea level. The highest known mountain on any planet in the Solar System is Olympus Mons on Mars at 21,171 m (69,459 ft). (<a href="https://en.wikipedia.org/wiki/Mountain#">Wikipedia</a>, 2024)</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4 col-lg-3 col-xl-2">
+
+                <h3>Resources</h3>
+                <p> <a href="https://en.wikipedia.org/wiki/Mountain">Wikipedia</a> </p>
+                <break></break>
+                <p> <a href="https://www.nationalgeographic.com/science/article/mountains">National Geographic</a> </p>
+                <break></break>
+                <p> <a href="https://www.britannica.com/science/mountain-landform">Britannica</a> </p>
+                <break></break>
+                <p> <a href="https://www.nps.gov/subjects/mountains/index.htm">National Parks Service</a> </p>
+                <break></break>
+                <p> <a href="https://www.veranda.com/travel/g36674338/beautiful-mountains/">Veranda</a> </p>
+                <break></break>
+                <p> <a href="https://rmgsc.cr.usgs.gov/gme/gme.shtml">USGS Mnt Explorer</a> </p>
+                <break></break>
+                <p> <a href="https://www.google.com/maps/d/u/0/viewer?mid=11yi4ua9sOlGtytpKYP-CMO_kdWw&hl=en_US&ll=33.437648180871726%2C85.21502492499997&z=2">Google Maps</a> </p>
+
+                <!-- 2ND PAGE LINK --> 
+                <h3 class="pt-3">Beaches!</h3>
+                <p> Enjoyed this page? Check out <a href="ex3_pg2.html">our page on beaches</a>! </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Cards Container -->
+    <div class="container-fluid pt-4 pb-4">
+        <div class="row text-center">
+
+            <!-- Card 1 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 1-->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/rwZYRn3.jpeg" alt="Zillertal Alps" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 1 -->
+                    <p class="card-title text-center"> <strong>Zillertal Alps</strong> </p>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 2 -->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/O7C7tOu.jpeg" alt="Bettmerhorn Mountains" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 2 -->
+                    <p class="card-title text-center"> <strong>Bettmerhorn Mountains</strong> </p>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 3 -->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/tlWxepQ.jpeg" alt="Yosemite Tunnel" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 3 -->
+                    <p class="card-title text-center"> <strong>Yosemite Tunnel</strong> </p>
+
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 4 -->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/ObUXJBG.jpeg" alt="Ciucaș Peak" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 4 -->
+                    <p class="card-title text-center"> <strong>Ciucaș Peak</strong> </p>
+
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 5 -->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/hCNMq7k.jpeg" alt="Monte Altissimo di Nago" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 5 -->
+                    <p class="card-title text-center"> <strong>Monte Altissimo di Nago</strong> </p>
+
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card">
+
+                    <!-- Image 6 -->
+                    <div class="card-body card-img">
+                        <img class="img-fluid" src="https://i.imgur.com/0aj7AGu.jpeg" alt="Whistler Mounatain" width="175" height="175">
+                    </div>
+
+                    <!-- Caption 6 -->
+                    <p class="card-title text-center"> <strong>Whistler Mounatain</strong> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Toggled Images Container -->
+    <div class="container-fluid">
+        <div class="row text-center pt-3 pb-4">
+
+            <!-- Toggled Image 1 -->
+            <div class="col-md-6 col-xl-3">
+
+                <!-- Image -->
+                <a data-bs-target="#img7"  data-bs-toggle="collapse">
+                    <img class="img-fluid rounded-circle " src="https://i.imgur.com/zIlol4P.jpeg" alt="Rock Climbing" width="300" height="300">
+                </a>
+
+                <!-- Caption -->
+                <div id="img7" class="collapse pt-3">
+                    <p><strong>Rock Climbing</strong></p>
+                    <p>Rock climbing is a sport in which participants climb up, across, or down natural rock formations. The goal is to reach the summit of a usually pre-defined route without falling. Rock climbing is a physically and mentally demanding sport, one that often tests a climber's strength, endurance, agility and balance along with mental control. Knowledge of proper climbing techniques and the use of specialized climbing equipment is crucial for the safe completion of routes. (<a href="https://en.wikipedia.org/wiki/Rock_climbing">Wikipedia</a>, 2024)</p>
+                </div>
+
+            </div>
+
+            <!-- Toggled Image 2 -->
+            <div class="col-md-6 col-xl-3">
+
+                <!-- Image -->
+                <a data-bs-target="#img8" data-bs-toggle="collapse">
+                    <img class="img-fluid rounded-circle" src="https://i.imgur.com/hlt7qwk.jpeg" alt="Mountain Biking" width="300" height="300">
+                </a>
+
+                <!-- Caption -->
+                <div id="img8" class="collapse pt-3">
+                    <p><strong>Mountain Biking</strong></p>
+                    <p>Mountain biking is a sport of riding bicycles off-road, often over rough terrain, usually using specially designed mountain bikes. Mountain bikes share similarities with other bikes but incorporate features designed to enhance durability & performance in rough terrain, such asair/coil-sprung suspension shocks, larger & wider wheels & tires, stronger frame materials, & mechanically/hydraulically actuated disc brakes. Mountain biking can be broken down into 6 distinct categories. (<a href="https://en.wikipedia.org/wiki/Mountain_biking">Wikipedia</a>, 2024)</p>
+                </div>
+
+            </div>
+
+            <!-- Toggled Image 3 -->
+            <div class="col-md-6 col-xl-3">
+
+                <!-- Image -->
+                <a data-bs-target="#img9" data-bs-toggle="collapse">
+                    <img class="img-fluid rounded-circle" src="https://i.imgur.com/q4QVsP5.jpeg" alt="Hiking" width="300" height="300">
+                </a>
+
+                <!-- Caption -->
+                <div id="img9" class="collapse pt-3">
+                    <p><strong>Hiking</strong></p>
+                    <p>Hiking is a long, vigorous walk, usually on trails/footpaths in the countryside. It can be hazardous because of terrain, inclement weather, becoming lost, etc. The dangerous circumstances hikers can face include specific accidents or physical ailments. It is especially hazardous in high mountains, crossing rivers and glaciers, and when there is snow and ice. At times hiking may involve scrambling, using ropes, ice axes and crampons and the skill to properly use them. (<a href="https://en.wikipedia.org/wiki/Hiking">Wikipedia</a>, 2024)</p>
+                </div>
+
+            </div>
+
+            <!-- Toggled Image 4 -->
+            <div class="col-md-6 col-xl-3">
+
+                <!-- Image -->
+                <a data-bs-target="#img10" data-bs-toggle="collapse">
+                    <img class="img-fluid rounded-circle" src="https://i.imgur.com/RPsc6ou.jpeg" alt="Skiing" width="300" height="300">
+                </a>
+
+                <!-- Caption -->
+                <div id="img10" class="collapse pt-3">
+                    <p><strong>Skiing</strong></p>
+                    <p>Skiing is the use of skis to glide on snow. Variations of purpose include basic transport, a recreational activity, or a competitive winter sport. Many competitive skiing events are recognized by the International Olympic Committee (IOC), International Ski, and Snowboard Federation (FIS). Skiing has a 5,000-year-old history. Although modern skiing has evolved from beginnings in Scandinavia, it may have been practiced more than 100 centuries ago in China. (<a href="https://en.wikipedia.org/wiki/Skiing">Wikipedia</a>, 2024)</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    -->
+
+</body>
+
+</html>
